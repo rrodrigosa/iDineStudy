@@ -21,6 +21,10 @@ struct ItemRow: View {
                     .font(.headline)
                 Text("$\(item.price)")
             }
+            
+            ForEach(item.restrictions, id: \.self) { restriction in
+                Text(restriction)
+            }
         }
     }
 }
