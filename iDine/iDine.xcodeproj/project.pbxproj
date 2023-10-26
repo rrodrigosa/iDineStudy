@@ -68,14 +68,9 @@
 			isa = PBXGroup;
 			children = (
 				CBD0979C2AE1BB00004B4253 /* Util */,
+				CBE2DEC72AEB105200CBC8D5 /* Features */,
 				CBD097862AE1B2F6004B4253 /* iDineApp.swift */,
-				CBD097882AE1B2F6004B4253 /* ContentView.swift */,
 				CB5D0A8F2AE9B01A009F6CDD /* MainView.swift */,
-				CBD097952AE1BAB4004B4253 /* Menu.swift */,
-				CBD097972AE1BAB4004B4253 /* Order.swift */,
-				CBDB959F2AE6EAE000BFDC64 /* ItemRow.swift */,
-				CBD4E9DC2AE84EC500F8F722 /* ItemDetail.swift */,
-				CBDC238D2AE9947200F159C2 /* OrderView.swift */,
 				CBD0978A2AE1B2F8004B4253 /* Assets.xcassets */,
 				CBD0978C2AE1B2F8004B4253 /* Preview Content */,
 			);
@@ -97,6 +92,67 @@
 				CBD097942AE1BAB3004B4253 /* Helper.swift */,
 			);
 			path = Util;
+			sourceTree = "<group>";
+		};
+		CBE2DEC22AEB0D6300CBC8D5 /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				CBE2DEC52AEB0DB600CBC8D5 /* Views */,
+				CBE2DEC62AEB0DC500CBC8D5 /* Models */,
+			);
+			path = Menu;
+			sourceTree = "<group>";
+		};
+		CBE2DEC32AEB0D7200CBC8D5 /* Order */ = {
+			isa = PBXGroup;
+			children = (
+				CBE2DEC82AEB112800CBC8D5 /* Views */,
+				CBE2DEC92AEB113400CBC8D5 /* Models */,
+			);
+			path = Order;
+			sourceTree = "<group>";
+		};
+		CBE2DEC52AEB0DB600CBC8D5 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CBD097882AE1B2F6004B4253 /* ContentView.swift */,
+				CBDB959F2AE6EAE000BFDC64 /* ItemRow.swift */,
+				CBD4E9DC2AE84EC500F8F722 /* ItemDetail.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		CBE2DEC62AEB0DC500CBC8D5 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CBD097952AE1BAB4004B4253 /* Menu.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		CBE2DEC72AEB105200CBC8D5 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				CBE2DEC22AEB0D6300CBC8D5 /* Menu */,
+				CBE2DEC32AEB0D7200CBC8D5 /* Order */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		CBE2DEC82AEB112800CBC8D5 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CBDC238D2AE9947200F159C2 /* OrderView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		CBE2DEC92AEB113400CBC8D5 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CBD097972AE1BAB4004B4253 /* Order.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
