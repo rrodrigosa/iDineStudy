@@ -10,8 +10,23 @@ import SwiftUI
 struct CheckoutView: View {
     @EnvironmentObject var order: Order
     
+    let paymentTypes = ["Cash", "Credit Card", "iDine Points"]
+    
+    @State private var paymentType = "Cash"
+    
     var body: some View {
-        Text("Hello, World!")
+        VStack {
+            Section {
+                Picker("How do you want to play?", selection: $paymentType) {
+                    
+                    ForEach(paymentTypes, id: \.self) {
+                        Text($0)
+                    }
+                }
+            }
+        }
+        .navigationTitle("Payment")
+        .navigationBarTitleDisplayMode(.inline)
     }
 }
 
