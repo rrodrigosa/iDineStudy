@@ -17,7 +17,7 @@ struct CheckoutView: View {
     var body: some View {
         VStack {
             Section {
-                Picker("How do you want to play?", selection: $paymentType) {
+                Picker("How do you want to pay?", selection: $paymentType) {
                     
                     ForEach(paymentTypes, id: \.self) {
                         Text($0)
