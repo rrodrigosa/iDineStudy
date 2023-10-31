@@ -29,6 +29,7 @@ struct OrderView: View {
                     NavigationLink("Place Order") {
                         CheckoutView()
                     }
+                    .disabled(order.items.isEmpty)
                 }
             }
             .navigationTitle("Order")
