@@ -22,7 +22,8 @@ struct OrderView: View {
                             
                             Text("$\(item.price)")
                         }
-                    }.onDelete(perform: deleteItems)
+                    }
+                    .onDelete(perform: deleteItems)
                 }
                 
                 Section {
